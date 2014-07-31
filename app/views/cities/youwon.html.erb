@@ -1,0 +1,13 @@
+<-- User will reach this page if they name all cities correctlly.-->
+
+<h1> You did it! </h1>
+
+<h3> You named all cities where TTS has a campus! </h3>
+
+<p> Here they are: </p>
+
+<div>
+	<% @cities.each do |cities| %>
+		<%= "#{city.id}. #{city.name}" %><br>
+	<% end %>
+</div> 
